@@ -1,0 +1,93 @@
+body {
+  background-color: black;
+  color: #ddd;
+  padding-top: 5px;
+  font-family: "text", serif;
+}
+
+h1 {
+  font-family: "title", serif;
+  margin-bottom: -5px;
+}
+
+.btn-primary {
+  --bs-btn-bg: #333;
+  --bs-btn-border-color: #444;
+  --bs-btn-hover-bg: #333;
+  --bs-btn-hover-border-color: #666;
+  --bs-btn-active-bg: #555;
+  --bs-btn-active-border-color: #999;
+  --bs-btn-disabled-color: #888;
+  --bs-btn-disabled-bg: #555;
+  --bs-btn-disabled-border-color: #777;
+}
+
+.btn {
+  font-size: 1.15rem;
+  padding: 5px 15px 2px 15px;
+  margin: 5px;
+  padding-bottom: 2px;
+}
+
+.alert {
+  width: 80%;
+  padding: 4px;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.alert-primary {
+  background-color: #333;
+  border-color: #555;
+  color: #ddd;
+}
+
+.main-container {
+  max-width: 400px;
+  text-align: center;
+  padding: 0;
+}
+
+#momir-buttons {
+  display: center;
+  flex-wrap: wrap;
+}
+
+.momir-button {
+  flex: 0 0 calc(25% - 10px);
+}
+
+#card-image {
+  width: 100%;
+}
+
+.history-image {
+  width: calc(20% - 6px);
+  margin: 3px;
+}
+
+@font-face {
+  font-family: "title";
+  src: url("fonts/beleren-b.woff2") format("woff2"),
+       url("fonts/beleren-b.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("fonts/mplantin.woff2") format("woff2"),
+       url("fonts/mplantin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+
+  #card-image {
+    width: 2.4in;
+  }
+}
